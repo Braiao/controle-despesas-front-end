@@ -1,8 +1,8 @@
 
 <ion-content [fullscreen]="true">
   <div class="heading">
-    <h1>Entrar agora</h1>
-    <p>Realize o login para continuar</p>
+    <h1>Registre-se</h1>
+    <p>Realize o registro para continuar</p>
   </div>
   <div class="social-login">
     <p>Entre com suas redes sociais</p>
@@ -16,7 +16,11 @@
     </div>
   </div>
   <div class="email-login">
-    <p>Ou entre com seu email</p>
+    <p>Ou registre-se com seu email</p>
+    <div class="formfield">
+      <input type="text" name="nome" id="nome">
+      <label for="nome" placeholder="Nome">Nome</label>
+    </div>
     <div class="formfield">
       <input type="text" name="email" id="email">
       <label for="email" placeholder="Email">Email</label>
@@ -27,15 +31,13 @@
     </div>
     <div class="other-links">
       <div class="remember-me">
-        <ion-checkbox>
-          <p>Lembre-se de mim</p>
-        </ion-checkbox>
+        <ion-checkbox></ion-checkbox>
+        <p>Eu concordo com os termos de uso</p>
       </div>
-      <p class="forgot">Esqueci minha senha?</p>
     </div>
   </div>
   <div class="login-button">
-    <ion-button class="login" routerLink="/thank-you">Login</ion-button>
-    <p>Não tem uma conta? <span>Registre-se</span> </p>
+    <ion-button class="login" routerLink="*">Login</ion-button>
+    <p>Já possui uma conta? <span routerLink="/login">Entre</span></p>
   </div>
 </ion-content>
