@@ -1,0 +1,43 @@
+
+<ion-content [fullscreen]="true">
+  <div class="heading">
+    <h1>Registre-se</h1>
+    <p>Realize o registro para continuar</p>
+  </div>
+  <div class="social-login">
+    <p>Entre com suas redes sociais</p>
+    <div class="links">
+      <ion-button class="twitter" routerLink="/thank-you">
+        <ion-icon name="logo-twitter" />
+      </ion-button>
+      <ion-button class="facebook" routerLink="/thank-you">
+        <ion-icon name="logo-facebook" />
+      </ion-button>
+    </div>
+  </div>
+  <div class="email-login">
+    <p>Ou registre-se com seu email</p>
+    <div class="formfield">
+      <input type="text" name="nome" id="nome">
+      <label for="nome" placeholder="Nome">Nome</label>
+    </div>
+    <div class="formfield">
+      <input type="text" name="email" id="email">
+      <label for="email" placeholder="Email">Email</label>
+    </div>
+    <div class="formfield">
+      <input type="password" name="senha" id="senha">
+      <label for="senha" placeholder="Senha">Senha</label>
+    </div>
+    <div class="other-links">
+      <div class="remember-me">
+        <ion-checkbox></ion-checkbox>
+        <p>Eu concordo com os termos de uso</p>
+      </div>
+    </div>
+  </div>
+  <div class="login-button">
+    <ion-button class="login" routerLink="*">Login</ion-button>
+    <p>Já possui uma conta? <span routerLink="/login">Entre</span></p>
+  </div>
+</ion-content>
