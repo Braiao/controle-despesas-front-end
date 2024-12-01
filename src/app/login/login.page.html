@@ -1,13 +1,41 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">login</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="heading">
+    <h1>Entrar agora</h1>
+    <p>Realize o login para continuar</p>
+  </div>
+  <div class="social-login">
+    <p>Entre com suas redes sociais</p>
+    <div class="links">
+      <ion-button class="twitter" routerLink="/thank-you">
+        <ion-icon name="logo-twitter" />
+      </ion-button>
+      <ion-button class="facebook" routerLink="/thank-you">
+        <ion-icon name="logo-facebook" />
+      </ion-button>
+    </div>
+  </div>
+  <div class="email-login">
+    <p>Ou entre com seu email</p>
+    <div class="formfield">
+      <input type="text" name="email" id="email">
+      <label for="email" placeholder="Email">Email</label>
+    </div>
+    <div class="formfield">
+      <input type="password" name="senha" id="senha">
+      <label for="senha" placeholder="Senha">Senha</label>
+    </div>
+    <div class="other-links">
+      <div class="remember-me">
+        <ion-checkbox>
+          <p>Lembre-se de mim</p>
+        </ion-checkbox>
+      </div>
+      <p class="forgot">Esqueci minha senha?</p>
+    </div>
+  </div>
+  <div class="login-button">
+    <ion-button class="login" routerLink="/thank-you">Login</ion-button>
+    <p>Não tem uma conta? <span>Registre-se</span> </p>
+  </div>
 </ion-content>
